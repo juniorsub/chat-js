@@ -1,0 +1,111 @@
+/* Resetando margens e padding */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout de login */
+#loginPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+#loginNameInput {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+#loginButton {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Layout de chat */
+#chatPage {
+    display: none;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+}
+
+#userList {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    height: 100%;
+    overflow-y: auto;
+    max-width: 20%; /* Lista de usuários menor */
+    min-width: 150px; /* Garantir que a lista não seja menor que 150px */
+    order: 1; /* Movido para o lado direito */
+}
+
+#chatArea {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 100%;
+    overflow-y: auto;
+    order: 0; /* Mantido à esquerda */
+}
+
+.chatList {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.chatInput {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+#chatTextInput {
+    flex: 1;
+    height: 40px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#sendMessage {
+    height: 40px;
+}
+
+/* Estilo das mensagens */
+.chatList li {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff
+}
+
+.chatList li.m-status {
+    color: #4a4747;
+    font-style: italic;
+}
+
+.chatList li.m-txt span {
+    font-weight: bold;
+    color: blue;
+}
+
+.chatList li.m-txt span.me {
+    color: red;
+}
+
+.userList ul {
+    padding: 0;
+}
+
+.userList li {
+    padding: 8px;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
